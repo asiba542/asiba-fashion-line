@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Fashion Line</title>
+
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #222;
+            background: #fff;
+        }
+
+        h1, h2, h3, h4, h5,
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* NAVBAR */
+
+        .navbar-brand {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .nav-link {
+            color: #222;
+            font-size: 15px;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #777;
+        }
+
+        /* PAGE HEADER */
+
+        .page-header {
+            height: 530px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.45),
+                    rgba(0,0,0,.60)
+                ),               
+                url("https://i.pinimg.com/736x/ae/b8/d4/aeb8d4b5b2c4ee19b2df5422e41aa7b9.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(50px, 7vw, 80px);
+        }
+
+        /* STORY */
+
+        .story-image {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .story-text {
+            line-height: 1.9;
+            color: #666;
+        }
+
+        /* VALUES */
+
+        .value-card {
+            border: 1px solid #eee;
+            padding: 40px 30px;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,.08);
+        }
+
+        .value-icon {
+            width: 65px;
+            height: 65px;
+            border: 1px solid #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 25px;
+        }
+
+        /* STATS */
+
+        .stats {
+            background: #111;
+            color: #fff;
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+        }
+
+        /* CTA */
+
+        .cta {
+            background: #f5f3f0;
+        }
+
+        .btn-fashion {
+            background: #111;
+            color: #fff;
+            padding: 13px 30px;
+            border-radius: 0;
+        }
+
+        .btn-fashion:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom py-3">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            FASHION LINE
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto gap-lg-4">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="mens.html">
+                        Men
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="womens.html">
+                        Women
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header text-white text-center">
+
+    <div class="container">
+
+        <p class="text-uppercase">
+            Discover Fashion Line
+        </p>
+
+        <h1>
+            About Us
+        </h1>
+
+        <p class="lead">
+            Where modern style meets timeless elegance.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- OUR STORY -->
+
+<section class="py-5">
+
+    <div class="container py-5">
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+
+                <img
+                    src="https://i.pinimg.com/736x/3d/15/77/3d15779e6413c37fbda61afe6ff4acaf.jpg"
+                    class="story-image"
+                    alt="Fashion Line collection">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p class="text-uppercase text-muted">
+                    Our Story
+                </p>
+
+                <h2 class="display-5 mb-4">
+                    Fashion Made With Purpose
+                </h2>
+
+              <p class="story-text">
+    Fashion Line was founded with a clear vision: to redefine everyday
+    fashion through timeless elegance, modern design, and effortless style.
+</p>
+
+<p class="story-text">
+    We believe fashion is more than clothing. It is an expression of
+    individuality, confidence, and personal style. Every piece is thoughtfully
+    designed to help you look and feel your best.
+</p>
+
+<p class="story-text">
+    Our collections bring together contemporary trends and timeless
+    sophistication, featuring quality fabrics, refined details, and carefully
+    considered designs. At Fashion Line, we are committed to creating
+    fashion that is stylish, versatile, and made for every occasion.
+</p>
+
+                <a href="mens.html" class="btn btn-fashion mt-3">
+                    Explore Collection
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VALUES -->
+
+<section class="py-5 bg-light">
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <p class="text-uppercase text-muted">
+                What We Believe
+            </p>
+
+            <h2 class="display-5">
+                Our Values
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="value-card bg-white">
+
+                    <div class="value-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Quality
+                    </h3>
+
+                    <p class="text-muted">
+                        We focus on quality materials, thoughtful
+                        construction and long-lasting designs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="value-card bg-white">
+
+                    <div class="value-icon">
+                        ♡
+                    </div>
+
+                    <h3>
+                        Confidence
+                    </h3>
+
+                    <p class="text-muted">
+                        Every piece is designed to help you feel
+                        confident, comfortable and effortlessly stylish.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="value-card bg-white">
+
+                    <div class="value-icon">
+                        ◆
+                    </div>
+
+                    <h3>
+                        Timeless Style
+                    </h3>
+
+                    <p class="text-muted">
+                        We create styles that go beyond temporary
+                        trends and remain relevant season after season.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats py-5">
+
+    <div class="container py-4">
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3">
+
+                <div class="stat-number">
+                    10K+
+                </div>
+
+                <p class="text-white-50">
+                    Happy Customers
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-number">
+                    500+
+                </div>
+
+                <p class="text-white-50">
+                    Fashion Styles
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-number">
+                    25+
+                </div>
+
+                <p class="text-white-50">
+                    Collections
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="stat-number">
+                    5+
+                </div>
+
+                <p class="text-white-50">
+                    Years of Style
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta py-5">
+
+    <div class="container py-5 text-center">
+
+        <p class="text-uppercase text-muted">
+            Find Your Style
+        </p>
+
+        <h2 class="display-5 mb-4">
+            Your Style. Your Story.
+        </h2>
+
+        <p class="text-muted mb-4">
+            Explore our latest collection and discover something
+            made for you.
+        </p>
+
+        <a href="womens.html" class="btn btn-fashion">
+            Shop Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="text-white py-5">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <h3>
+                    FASHION LINE
+                </h3>
+
+                <p class="text-white-50">
+                    Modern fashion designed for confident,
+                    contemporary lifestyles.
+                </p>
+
+            </div>
+
+            <div class="col-md-6 text-md-end">
+
+                <a href="index.html"
+                   class="text-white text-decoration-none me-3">
+                    Home
+                </a>
+
+                <a href="mens.html"
+                   class="text-white text-decoration-none me-3">
+                    Men
+                </a>
+
+                <a href="womens.html"
+                   class="text-white text-decoration-none me-3">
+                    Women
+                </a>
+
+                <a href="contact.html"
+                   class="text-white text-decoration-none">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <p class="text-white-50 text-center mb-0">
+            © 2026 Fashion Line. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
